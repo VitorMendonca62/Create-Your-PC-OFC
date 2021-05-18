@@ -1,0 +1,137 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+header {
+    position: fixed;                /* O position fixed deixa o menu fixado em toda página*/
+    background-color: white;
+    margin-bottom: 3vh;
+    height: 70px;
+    width: 1920px;
+    z-index: 8888;
+}
+#menu-left {
+    margin-left: 30px;              /* Logo do Etepam */
+    margin-top: 10px;
+}
+#lista-começo {
+    margin-top: -30px;
+    margin-left: 900px;                       /* Localização do menu direito */
+}
+#lista-começo li{
+    display: inline-block;                  /* Formatação da localização do menu direito */
+    margin-right: 10px;
+}
+#lista-começo a {
+    text-decoration: none;
+    color: rgba(56,56,56,0.75);     /* Formatação do link do menu direito */
+}
+#lista-começo a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;              /* Formatação do link do menu direito, ao passasr o mouse */                      /* Formatação do link do menu direito, ao passar o mouse */
+}
+/* Fim do Header */
+/* Inicio da Imagem Principal */ 
+#img-principal {
+    margin-top: 70px;
+}
+/* Fim da Imagem Principal */
+section {
+    background: #e9e9e9;     /* A cor da principal do section*/
+
+}
+.icon { 
+    font-size: 50px;
+    color: rgb(28, 28, 110);      /* Formartar os icons do sobre nós*/
+} 
+#icon-livro, #icon-comentario {
+    font-size: 50px;
+}
+/* Explicação sobre nos */
+#explicação-sobre-nos {
+    margin-top: 20px;
+    margin-left: 0;
+    padding-right: 10px;
+
+}
+.titulos {
+    margin-left: 15px;
+    font-size: 20pt;
+    color:rgb(75, 67, 67);
+}
+.textos {
+    text-align: justify;
+    max-width: 490px;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: rgb(87, 86, 86);
+}
+
+/*  fim da Explicação sobre nos */
+/* Começo publicaçãoes */
+/*Começo das publicações*/
+#nossas-publicações {
+    margin-top: -480px;
+    margin-left: 40px;
+    min-width: 1500px;
+    margin-bottom: 80px;
+}
+.publicações{
+    width: 500px;
+    height: 200px;
+    margin-top: 500px;
+    margin-left: 400px;
+}
+.img{
+    flex: 1;
+    height: 140%;
+    cursor: pointer;
+    margin: 0 2px;
+    transition: all 0,3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.img01{
+    background-image: url("https://i.imgur.com/4E4eQo4.png");
+}
+.img02{
+    background-image: url("https://i.imgur.com/itgWSlo.jpg");
+}
+.img03{
+    background-image: url("https://i.imgur.com/gQnp0w1.jpg");
+}
+.img04{
+    background-image: url("https://infotecbrasil.com.br/wp-content/uploads/2019/05/service1-4.jpg");
+}
+.img p{
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.6);
+    transform: rotate(-90deg);
+    transition: all 0.3s;
+    transform-origin: 0% 0%;
+    color: #FFF;
+    text-transform:uppercase;
+    white-space:nowrap;
+}
+.img:hover{
+    flex:2;
+}
+.img:hover p{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transform: rotate(0deg);
+}
+.publicações p:hover {
+    border: 2px solid rgb(28, 28, 110);
+    text-decoration: none;
+    color: dodgerblue;
+    
+}
