@@ -4,14 +4,14 @@
     padding: 0;
 }
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 header {
     position: fixed;                /* O position fixed deixa o menu fixado em toda página*/
     background-color: white;
     margin-bottom: 3vh;
     height: 70px;
-    width: 1920px;
+    width: 100% ;
     z-index: 8888;
 }
 #menu-left {
@@ -20,7 +20,7 @@ header {
 }
 #lista-começo {
     margin-top: -30px;
-    margin-left: 900px;                       /* Localização do menu direito */
+    text-align: right;                     /* Localização do menu direito */
 }
 #lista-começo li{
     display: inline-block;                  /* Formatação da localização do menu direito */
@@ -38,6 +38,8 @@ header {
 /* Inicio da Imagem Principal */ 
 #img-principal {
     margin-top: 70px;
+    width: 100%;
+    height: 50%;
 }
 /* Fim da Imagem Principal */
 section {
@@ -56,7 +58,6 @@ section {
     margin-top: 20px;
     margin-left: 0;
     padding-right: 10px;
-
 }
 .titulos {
     margin-left: 15px;
@@ -77,14 +78,15 @@ section {
 #nossas-publicações {
     margin-top: -480px;
     margin-left: 40px;
-    min-width: 1500px;
+    min-width: 500px;
     margin-bottom: 80px;
 }
 .publicações{
     width: 500px;
     height: 200px;
     margin-top: 500px;
-    margin-left: 400px;
+    align-items: center;
+    margin-left: 30%;
 }
 .img{
     flex: 1;
@@ -141,8 +143,12 @@ section {
     margin-top: 50px;
 }
 .row {
-    padding-left: 100px;
+    padding-left: 25px;
     padding-bottom: 100px;
+}
+.equipe {
+    height: 40%;
+    width: 100%;
 }
 .col-lg-2 {
     margin-right: 15px;
@@ -176,11 +182,11 @@ footer {
 #footer-center a { 
     position: absolute; 
     margin-top: 60px;
-    margin-left: 580px;
+    margin-left: 43%;
     text-decoration: none;
     color: white;
     font-size: 20pt;
-    
+
 }
 #footer-center a:hover {
     color: blue;
@@ -209,4 +215,29 @@ footer {
     height: 7vh;
     color:rgb(119, 118, 118);
     text-align: center;
+}
+@media (max-width: 991px) {
+    .equipe {
+        width: 50%;
+        height: 60%;
+        margin-left: 25%;
+    }
+    .col-lg-2 {
+        height: 600px;
+    }
+}
+@media (max-width: 600px) {
+    #menu-right {
+        display: none;
+    }
+    #publicações {
+        margin-left: 35px;
+    }
+    .equipe {
+        width: 70%;
+        margin-left: 70px;
+    }
+    .fa {
+        margin-top: 50px;
+    }
 }
