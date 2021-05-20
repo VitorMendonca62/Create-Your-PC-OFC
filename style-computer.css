@@ -29,6 +29,7 @@ section {
 @media (max-width: 600px) {
     .textos-computer {
         font-size: 130%;
+        max-width: 60%;
     }
     .titulos {
         max-width: 50%;
