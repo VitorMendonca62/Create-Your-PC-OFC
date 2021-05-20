@@ -186,7 +186,6 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 20pt;
-
 }
 #footer-center a:hover {
     color: blue;
@@ -194,25 +193,21 @@ footer {
     padding-bottom: -5vh;
     
 }
-#icon-instagram {
-    position: relative;
+.fa-instagram, .fa-twitter {
     color: black;
-    left: 46vw;
-    top: 9vw;
+    margin-top: 100px;
+}
+#icon-instagram, #icon-twitter{
     font-size: 20pt;
 }
-#icon-twitter {
-    position: relative;
-    color: black;
-    left: 47vw;
-    top: 9vw;
-    font-size: 20pt;
+#icon {
+    margin-left: 47%;
 }
+
 #copyright {
-    position: relative;
     background-color: rgba(0, 0, 0, 0.288);
-    bottom: -26.2vh;
-    height: 7vh;
+    height: 50px;
+    margin-top: 58px;
     color:rgb(119, 118, 118);
     text-align: center;
 }
@@ -227,17 +222,34 @@ footer {
     }
 }
 @media (max-width: 600px) {
+    html {
+        width: 100%;
+    }
     #menu-right {
         display: none;
     }
-    #publicações {
-        margin-left: 35px;
+    section {
+        width: 600px
+    }
+    #explicação-sobre-nos {
+        margin-left: -15px;
+    }
+    .publicações {
+        margin-left: 10px;
+    }
+    .publicações div {
+        margin-left: 65px;
     }
     .equipe {
-        width: 70%;
-        margin-left: 70px;
+        width: 60%;
+        margin-left: 100px;
     }
-    .fa {
-        margin-top: 50px;
+    footer {
+        width: 168%;
     }
+    #footer-center a {
+        margin-left: 230px;
+        min-width: 200px;
+    }
+
 }
