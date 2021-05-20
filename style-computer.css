@@ -9,6 +9,9 @@ body {
     max-width: 50%;
     margin-left: 25%;
 }
+section {
+    margin-bottom: -18px;
+}
 .titulos {
     font-weight: bold;
     text-align: left;
@@ -21,4 +24,14 @@ body {
 .fotos-explicativos {
     width: 40%;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .textos-computer {
+        font-size: 130%;
+    }
+    .titulos {
+        max-width: 50%;
+    }
+    
 }
