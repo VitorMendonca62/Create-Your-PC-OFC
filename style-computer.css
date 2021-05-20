@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+.textos-computer {
+    text-align: justify;
+    margin-top: 10px;
+    color: rgb(87, 86, 86);
+    font-size: 110%;
+    max-width: 50%;
+    margin-left: 25%;
+}
+.titulos {
+    font-weight: bold;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.container {
+    text-align: center;
+}
+.fotos-explicativos {
+    width: 40%;
+    text-align: center;
+}
