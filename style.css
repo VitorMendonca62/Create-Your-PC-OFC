@@ -34,6 +34,17 @@ header {
     color: blue;
     border-bottom: 1px solid blue;              /* Formatação do link do menu direito, ao passasr o mouse */                      /* Formatação do link do menu direito, ao passar o mouse */
 }
+option,select {
+    color: rgba(56,56,56,0.75);
+    border: none;
+}
+header select {
+    width: 80%;
+    background-color: white;
+}
+#select {
+    margin-left: -20px;
+}
 /* Fim do Header */
 /* Inicio da Imagem Principal */ 
 #img-principal {

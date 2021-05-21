@@ -23,7 +23,16 @@
             <nav>
                 <ul id="lista-começo">
                     <li><a href="index.html#começo">Início</a></li>
-                    <li><a href="#começo">Computador</a></li>
+                    <li id="select">
+                        <select name="unidade" id="unidade" onChange="AbrirSecao(this.value)">
+                            <option value="">Materias</option>
+                            <option value="computador.html">Computador</option>
+                            <option value="redes.html">Redes</option>
+                            <option value="logica.html">Lógica</option>
+                            <option value="sms.html">SMS</option>
+                        </select>
+                        </li>
+                        <script src="menu.js"></script>
                     <li><a href="index.html#direc-publi">Publicações</a></li>
                     <!--Menu para ser direcionados para certa parte da página principal ou ir para uma nova página-->
                     <li><a href="index.html#equipe">Equipe</a></li>
