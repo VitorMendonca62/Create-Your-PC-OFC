@@ -1,0 +1,52 @@
+.parágrafo1{
+    color: rgb(87, 86, 86);
+    font-size: 100%;
+    max-width: 600px;
+    margin-left: 650px;
+    margin-top: -400px;
+ 
+}
+.parágrafo2{
+    color: rgb(87, 86, 86);
+    font-size: 100%;
+    max-width: 600px;
+    margin-left: 650px;
+   
+}
+.parágrafo3{
+    color: rgb(87, 86, 86);
+    font-size: 100%;
+    max-width: 600px;
+    margin-left: 650px;
+}
+.parágrafo4{
+    color: rgb(87, 86, 86);
+    font-size: 100%;
+    max-width: 500px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.título1{
+    color:rgb(75, 67, 67);
+    font-size: 150%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.título2{
+    color:rgb(75, 67, 67);
+    font-size: 150%;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.imagem1{
+    margin-top: 30px;
+    margin-left: 100px;
+    height: 400px;
+}
+
+.imagem2{
+    height: 400px;
+    margin-left: 630px;
+    margin-top: -650px;
+}
