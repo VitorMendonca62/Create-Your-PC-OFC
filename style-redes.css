@@ -1,0 +1,22 @@
+.títulos {
+    color:rgb(75, 67, 67);
+    font-weight: bold;
+    text-align: justify;
+    margin-left: 450px;
+    margin-top: 15px;
+}
+.parágrafo {
+    color: rgb(87, 86, 86);
+    font: normal 100% sans-serif;
+    text-align: justify;
+    margin-left: 450px;
+    max-width: 500px;
+    margin-top: 10px;
+}
+.imagens{
+    margin-left: 450px;
+    width: 40%;
+}
+footer {
+    margin-top: -15px;
+}
