@@ -4,10 +4,11 @@
     text-align: justify;
     margin-left: 450px;
     margin-top: 15px;
+    font-size: 150%;
 }
 .parágrafo {
     color: rgb(87, 86, 86);
-    font: normal 100% sans-serif;
+    font: 100% sans-serif;
     text-align: justify;
     margin-left: 450px;
     max-width: 500px;
