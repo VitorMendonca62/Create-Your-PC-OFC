@@ -283,6 +283,8 @@ footer {
 	border-bottom: 1px solid #CCC;
 	text-align: left;
 	list-style-type: none;
+    margin-right: 50px;
+    width: 80%;
 }
 #menu-para-celular a:link {
     background: #F5F5F5;

@@ -1,3 +1,4 @@
+
 var confirmação = false
 var ul_menu = document.getElementById('ul-menu-celular')
 var div_menu = document.getElementById('menu-para-celular')
