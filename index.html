@@ -11,8 +11,8 @@
     <title>Create Your PC</title>
 </head>
 
-<body onload="carregar()">
-    <span id="começo"></span>
+<body>
+    <span id="começo"><span id="pagina-inicial"></span></span>
     <!--Para auxiliar na direção do menu-->
     <header>
         <!--Menu da esquerda cotendo a logo do ETEPAM-->
@@ -39,20 +39,18 @@
                 </ul>
             </nav>
         </div>
-        <div id="div-select-para-celular">
-            <select name="select-para-celular" id="select-para-celular">
-                <ul>
+        <div id="menu-para-celular">
+            <i class="fa fa-bars" id="barra-menu" onclick="menu()"></i>
+            <div id="div-ul-menu-celular">
+                <ul id="ul-menu-celular" hidden>
                     <li><a href="#começo">Início</a></li>
                     <li><a href="#direc-publi">Publicações</a></li>
                     <li><a href="#equipe">Equipe</a></li>
                     <li><a href="#direc-sobre-nos">Sobre nós</a></li>
+                    <script src="main.js"></script>
                 </ul>
-            </select>
-        </div>
-
-
-
-
+            </div>
+          </div>
     </header>
     <section>
         <div id="div-img-principal">
@@ -178,7 +176,6 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
 </body>
 
 </html>

@@ -92,7 +92,7 @@ footer {
         max-width: 440px;
     }
     footer{
-        max-width: 500px;
+        max-width: 100%;
     }
     #footer-center a {
         padding-left: -400px;    
