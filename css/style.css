@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-homepage,
+.nav-header ul,
+.introduction main,
+.about-project,
+.about-us,
+.posts .imgs,
+.posts,
+.team,
+.team .members,
+.team .in-member,
+footer,
+.up-footer .icons,
+footer .down-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-homepage {
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+.logo-etepam {
+  width: 16.7rem;
+  float: left;
+}
+.nav-header ul {
+  width: 32rem;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.nav-header a {
+  color: #636363;
+  text-decoration: none;
+}
+.nav-header a:hover {
+  color: #0300af;
+  border-bottom: #0300af 1px solid;
+}
+.menu-bars {
+  font-size: 2rem !important;
+  color: #0703ee;
+  cursor: pointer;
+  display: none !important;
+}
+/* MAIN */
+main {
+  background-color: #e9e9e9;
+  margin-top: 4rem;
+}
+.div-main-img {
+  overflow-x: hidden;
+}
+.main-img-homepage {
+  width: 100vw;
+  overflow: hidden;
+}
+.introduction main {
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.about-project,
+.about-us {
+  align-items: flex-start;
+}
+.introduction .icons {
+  margin-right: 1rem;
+}
+.introduction .icons,
+.icons {
+  color: #1c1c6e;
+  font-size: 3rem !important;
+}
+.titles {
+  color: #4b4343;
+  font-size: 2rem;
+}
+.texts {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #575656;
+  max-width: 30rem;
+}
+/* POSTS */
+.posts {
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.posts .imgs {
+  width: 100%;
+  margin-top: 2rem;
+}
+.posts a {
+  width: 22%;
+  height: 30rem;
+  text-decoration: none;
+}
+.posts img {
+  width: 100%;
+  height: 100%;
+}
+.posts a::before {
+  display: none;
+  position: relative;
+  content: attr(name);
+  top: 4rem;
+  z-index: 3;
+  margin-left: 1rem;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+}
+a:hover::before {
+  display: inline;
+}
+a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+/* TEAM */
+.team {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  flex-direction: column;
+}
+.team .members {
+  margin-top: 2rem;
+  flex-direction: row;
+}
+.team .member {
+  align-self: flex-start;
+  background-color: #dfdfdf;
+  width: 17.5%;
+  margin: 0 0.2rem;
+  padding: 1rem 1.8rem 2rem;
+  height: 30rem;
+}
+.team .in-member {
+  flex-direction: column;
+}
+.team .titles {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.team-title .titles {
+  font-size: 2rem;
+}
+.team .texts {
+  font-size: 1.1rem;
+}
+.team .member img {
+  border-radius: 50%;
+}
+/* Footer */
+footer {
+  flex-direction: column;
+  background-color: #202020;
+  height: 100%;
+}
+footer .up-footer {
+  padding: 5rem 0;
+}
+footer .up-footer .titles {
+  color: #fff;
+  transition: 0.5s;
+  text-decoration: none;
+}
+footer .up-footer .footer-icons {
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.footer-icons a {
+  color: #000;
+  transition: 0.5s;
+}
+.footer-icons a:hover,
+.up-footer .titles:hover {
+  color: #888;
+}
+footer .down-footer {
+  color: #777676;
+  background-color: #131313;
+  width: 100%;
+  text-align: center;
+  height: 2rem;
+}
+
+/* MEDIAS QUERIES */
+
+@media (max-width: 1300px) {
+  .posts a {
+    width: 25%;
+    height: 15rem;
+    margin-bottom: 1rem;
+  }
+  .team .members,
+  .imgs {
+    flex-direction: column;
+  }
+  .team .member {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .introduction main {
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    height: 35rem;
+  }
+}
+@media (max-width: 961px) {
+  .posts a {
+    width: 30%;
+  }
+}
+@media (max-width: 780px) {
+  .nav-header ul {
+    flex-direction: column;
+    position: absolute;
+    right: -50vw;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.76);
+    transition: 1s;
+  }
+  .menu-bars {
+    display: block!important;
+    position: relative;
+    z-index: 2;
+  }
+  .nav-header ul li a{
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .active {
+    right: 0!important;
+  }
+}
+@media (max-width: 600px) {
+  .logo-etepam {
+    width: 2.5rem;
+  }
+  .posts a {
+    width: 60%;
+  }
+  .introduction main {
+    height: 27rem;
+  }
+  .texts {
+    font-size: .9rem;
+  }
+  .titles {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (min-width: 3840px) {
+  .posts a {
+    width: 15.8%;
+  }
+}
+@media (min-width: 5760px) {
+  .posts a {
+    width: 10.5%;
+  }
+}
+@media (min-width: 7680px) {
+  .posts a {
+    width: 8%;
+  }
+}

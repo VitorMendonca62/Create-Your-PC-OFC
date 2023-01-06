@@ -1,181 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Create Your PC</title>
-</head>
+  </head>
+  <body>
+    <header class="header-homepage">
+      <div class="menu-left">
+        <a href="http://www.etepam.pe.gov.br/"
+          ><img class="logo-etepam" src="imgs/etepam-logo-aberta.png"
+        /></a>
+      </div>
+      <div class="menu-right">
+        <nav class="nav-header">
+          <i class="fa fa-solid fa-bars menu-bars"></i>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Materias</a></li>
+            <li><a href="#">Publicações</a></li>
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Sobre nós</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="div-main-img">
+        <img
+          class="main-img-homepage"
+          src="imgs/foto-etepam-fundo-pagina-inicial.png"
+        />
+      </div>
 
-<body>
-    <span id="começo"><span id="pagina-inicial"></span></span>
-    <!--Para auxiliar na direção do menu-->
-    <header>
-        <!--Menu da esquerda cotendo a logo do ETEPAM-->
-        <div id="menu-left"> <a href="http://www.etepam.pe.gov.br/"><img id="logo-etepam" width="255" height="45"
-                    src="https://i.imgur.com/Rjdmhn1.png"></a></div>
-        <div id="menu-right">
-            <nav>
-                <ul id="lista-começo">
-                    <li><a href="#começo">Início</a></li>
-                    <li id="select">
-                    <select name="unidade" id="unidade" onChange="AbrirSecao(this.value)">
-                        <option value="">Materias</option>
-                        <option value="computador.html">Computador</option>
-                        <option value="redes.html">Redes</option>
-                        <option value="logica.html">Lógica</option>
-                        <option value="sms.html">SMS</option>
-                    </select>
-                    </li>
-                    <script src="menu.js"></script>
-                    <li><a href="#direc-publi">Publicações</a></li>
-                    <!--Menu para ser direcionados para certa parte da página principal ou ir para uma nova página-->
-                    <li><a href="#equipe">Equipe</a></li>
-                    <li><a href="#direc-sobre-nos">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="menu-para-celular">
-            <i class="fa fa-bars" id="barra-menu" onclick="menu()"></i>
-            <div id="div-ul-menu-celular">
-                <ul id="ul-menu-celular" hidden>
-                    <li><a href="#começo">Início</a></li>
-                    <li><a href="#direc-publi">Publicações</a></li>
-                    <li><a href="#equipe">Equipe</a></li>
-                    <li><a href="#direc-sobre-nos">Sobre nós</a></li>
-                    <script src="main.js"></script>
-                </ul>
+      <section class="introduction">
+        <main>
+          <div class="about-us">
+            <i class="fa fa-book icons" aria-hidden="true"></i>
+            <div>
+              <h2>
+                <b class="titles">Quem somos?</b>
+              </h2>
+              <p class="texts">
+                Somos alunos da
+                <strong
+                  >Escola Técnica Estadual Professor Agamemnon Magalhães</strong
+                >, cursando o curso
+                <b>Manutenção e Suporte em Informática</b> no <b>2° ano</b>. A
+                finalidade do desse site é apresentar nossos conhecimentos em
+                <strong>lógica de programação</strong>,
+                <strong>manutenção de computadores</strong>,
+                <strong>redes em computadores</strong> e em
+                <strong>segurança do meio ambiente e saúde</strong>. O projeto é
+                supervisionado por <b>Clarice Manoela</b>, nossa professora de
+                Lógica.
+              </p>
             </div>
           </div>
-    </header>
-    <section>
-        <div id="div-img-principal">
-            <!--Imagem Principal-->
-            <img id="img-principal" src="https://i.imgur.com/pYaf4bX.png" >
-            <span id="direc-sobre-nos"></span>
-        </div>
 
-        <div id="explicação-sobre-nos">
-            <div class="row">
-                <div id="div-sobre-nos" class="textos-explicativos col-lg-6">
-                    <p><i id="icon-livro" class="fa fa-book icon" aria-hidden="true"></i><b class="titulos">Quem somos
-                            nós?</b>
-                    </p>
-
-                    <!--icon de um coméntario e um texto explicativo sobre nós-->
-
-                    <p id="sobre-nos" class="textos">Somos alunos da <b>Escola Técnica Estadual Professor Agamemnon
-                            Magalhães</b>, cursando o curso
-                        <b>Manutenção e Suporte em Informática</b> no <b>2° ano</b>. A finalidade do desse site é
-                        apresentar
-                        nossos conhecimentos em <b>lógica de programação</b>, <b>manutenção de computadores</b>,
-                        <b>redes em
-                            computadores</b> e em <b>segurança do meio ambiente e saúde</b>. O projeto é supervisionado
-                        por
-                        <b>Clarice Manoela</b>, nossa professora de Lógica.
-                    </p>
-                </div>
-                <div id="div-sobre-projeto" class="textos-explicativos col-lg-6">
-                    <p><i id="icon-comentario" class="fa fa-comment icon" aria-hidden="true"></i><b
-                            class='titulos'>Nosso
-                            projeto:</b></p>
-
-                    <!--icon de um livro e um texto explicativo sobre o projeto-->
-
-                    <p id="sobre-projeto" class="textos"> Com esse site mostraremos como montar seu computador passo à
-                        passo
-                        (<b>Manutenção de Microcomputador</b>), como configurar sua própria rede em casa (<b>Redes de
-                            computador</b>), o básico de Portugol, linguagem em que se aprende em <b>lógica da
-                            programação</b>, e também de como ter <b>segurança do meio ambiente e saúde</b>.</p>
-                </div>
-                <span id="direc-publi"></span>
+          <div class="about-project">
+            <i class="fa fa-comment icons" aria-hidden="true"></i>
+            <div>
+              <h2>
+                <b class="titles">Nosso projeto:</b>
+              </h2>
+              <p class="texts">
+                Com esse site mostraremos como montar seu computador passo à
+                passo (<strong>Manutenção de Microcomputador</strong>), como
+                configurar sua própria rede em casa (<strong
+                  >Redes de computador</strong
+                >), o básico de Portugol, linguagem em que se aprende em
+                <strong>lógica da programação</strong>, e também de como ter
+                <strong>segurança do meio ambiente e saúde</strong>.
+              </p>
             </div>
-            
-        </div>
+          </div>
+        </main>
+      </section>
 
-        <div id="publicações" class='publicações'>
-            <h2 id="nossas-publicações" class="titulos">Nossas publicações sobre as materias:</h2>
-            <a href="computador.html">
-                <div class='img img01'>
-                    <p class="nome">Peças</p>
-                </div>
-            </a>
-            <a href="redes.html">
-                <div class='img img02'>
-                    <p class="nome">Redes</p>
-                </div>
-            </a>
-            <a href="logica.html">
-                <div class='img img03'>
-                    <p class="nome">Lógica de Programação</p>
-                </div>
-            </a>
-            <a href="sms.html">
-                <div class='img img04'>
-                    <p class='nome'>SMS</p>
-                </div>
-            </a>
+      <section class="posts">
+        <h2 class="titles">Nossas publicações sobre as materias:</h2>
+        <div class="imgs">
+          <a href="#" class="link-post" name="Manuntenção">
+            <img src="imgs/img01.png" />
+          </a>
+          <a href="#" class="link-post" name="Redes">
+            <img src="imgs/img02.jpg" />
+          </a>
+          <a href="#" class="link-post" name="Lógica de Programação">
+            <img src="imgs/img03.jpg" />
+          </a>
+          <a href="#" class="link-post" name="SMS">
+            <img src="imgs/img04.jpg" />
+          </a>
         </div>
-        <div class="correção">a</div>
-        <div id="equipe">
-            <p class="titulos"> <i class="fa fa-users icon" id="icon-equipe" aria-hidden="true"></i> <b>Equipe</b></p>
+      </section>
+
+      <section class="team">
+        <div class="team-title">
+          <h2>
+            <b class="titles">Equipe:</b>
+          </h2>
         </div>
-        <div class="container-fluid marketing">
-            <div class="row">
-                <div class="col-lg-2">
-                    <img class="rounded-circle equipe" src="https://i.imgur.com/6WPeVYi.png" id="equipe-luan">
-                    <h2 class='titulos'>Luan Gabriel</h2>
-                    <p>Luan tem 16 anos, é inteligente, divertido, e muito calmo, ele pensa em seguir na carreira de
-                        denvolvimento de software</p>
-                </div>
-                <div class="col-lg-2">
-                    <img class="rounded-circle equipe" src="https://i.imgur.com/xh7ozM5.png" id="equipe-luis">
-                    <h2 class='titulos'>Luis Gabriel</h2>
-                    <p>Luis tem 16 anos, é engraçado,divertido, calmo e paciente. Pretende seguir carreira como tecnico
-                        em informática.</p>
-                </div>
-                <div class="col-lg-2">
-                    <img class="rounded-circle equipe" src="https://i.imgur.com/vMZNf4G.png" id="equipe-radassila">
-                    <h2 class='titulos'>Radássila Rebeka</h2>
-                    <p>Radássila, mais conhecida como "Irmã" tem 16 anos, ela é inteligente, divertida e calma, e
-                        pretende seguir carreira de biologa.</p>
-                </div>
-                <div class="col-lg-2">
-                    <img class="rounded-circle equipe" src="https://i.imgur.com/GaDoQdR.png" id="equipe-rodolfo">
-                    <h2 class='titulos'>Rodolfo Dutra</h2>
-                    <p>Rodolfo, mais conhecido como "Rodooollllfooo", tem 16 anos, uma pessoa inteligente e divertida, e
-                        que pretende em seguir na área de T.I.</p>
-                </div>
-                <div class="col-lg-2">
-                    <img class="rounded-circle equipe" width="180" height="180" src="https://i.imgur.com/Fiz6PAm.png"
-                        id="equipe-vitor">
-                    <h2 class='titulos'>Vitor Hugo</h2>
-                    <p>Vitor Hugo, mais conhecido como "Vitinho", tem 15 anos, é uma pessoa inteligente, alegre e
-                        extrovertida, pretende seguir na área de desenvolvimento de sistemas.</p>
-                </div>
+        <div class="members">
+          <div class="member">
+            <div class="in-member">
+              <img src="imgs/member-luan.png" />
+              <h3 class="titles titles-members">Luan Gabriel</h3>
+              <p class="texts">
+                Luan tem 18 anos, é uns dos melhores alunos da escola, dá aula
+                de monitoria para os 3° anos da escola, participou da monitoria
+                de redação e pretende seguir a área de economia.
+              </p>
             </div>
+          </div>
+          <div class="member">
+            <div class="in-member">
+              <img src="imgs/member-luis.png" />
+              <h3 class="titles">Luis Gabriel</h3>
+              <p class="texts">
+                Luís tem 18 anos, cursou Manutenção e Suporte em Informática na
+                ETEPAM, com seus conhecimentos, obtidos a partir do curso,
+                pretende seguir carreira de técnico em informática.
+              </p>
+            </div>
+          </div>
+          <div class="member">
+            <div class="in-member">
+              <img src="imgs/member-radassila.png" />
+              <h3 class="titles">Radássila Rebeka</h3>
+              <p class="texts">
+                Radássila tem 18 anos, cursou Manutenção e Suporte em
+                Informática na ETEPAM, com seus conhecimentos, obtidos a partir
+                do curso, pretende seguir carreira de engenharia de software.
+              </p>
+            </div>
+          </div>
+          <div class="member">
+            <div class="in-member">
+              <img src="imgs/member-rodolfo.png" />
+              <h3 class="titles">Rodolfo Dutra</h3>
+              <p class="texts">
+                Rodolfo tem 18 anos, apesar de cursar Manutenção e Suporte em
+                Informática na ETEPAM,apesar de ser uma área tecnológica,
+                pretender seguir a área de humanas em sua carreira.
+              </p>
+            </div>
+          </div>
+          <div class="member">
+            <div class="in-member">
+              <img src="imgs/member-vitor.png" />
+              <h3 class="titles">Vitor Hugo</h3>
+              <p class="texts">
+                Vitor tem 18 anos, foi membro e mentor da equipe de
+                infraestrutura de redesda escola, amante da tecnologia, pretente
+                seguir a carreira de redes de computadores ou programação.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
     <footer>
-        <div id="footer">
-            <div id="footer-center">
-                <a href="potfolio.html">
-                 Redes socias
-                </a>
-                <div id="icon"> 
-                <i class="fa fa-instagram footer" id="icon-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter footer" id="icon-twitter" ></i>
-                </div>
-            </div>
-            <div id="copyright">
-                <p>&copy;Copyright © Create Your PC. All rights reserved.</p>
-            </div>
+      <div class="up-footer">
+        <a class="titles" href="potfolio.html"> Redes socias </a>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
+      </div>
+      <div class="down-footer">
+        <p>&copy;Copyright © Create Your PC. All rights reserved.</p>
+      </div>
     </footer>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
