@@ -1,126 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-redes.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style-computer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Redes de Computação - Create Your PC</title>
-</head>
+  </head>
 
-<body>
-    <span id="começo"></span>
-    <!--Para auxiliar na direção do menu-->
-    <header>
-        <!--Menu da esquerda cotendo a logo do ETEPAM-->
-        <div id="menu-left"> <a href="http://www.etepam.pe.gov.br/"><img id="logo-etepam" width="255" height="45"
-                    src="https://i.imgur.com/Rjdmhn1.png"></a></div>
-        <div id="menu-right">
-            <nav>
-                <ul id="lista-começo">
-                    <li><a href="index.html#começo">Início</a></li>
-                    <li id="select">
-                        <select name="unidade" id="unidade" onChange="AbrirSecao(this.value)">
-                            <option value="">Materias</option>
-                            <option value="computador.html">Computador</option>
-                            <option value="redes.html">Redes</option>
-                            <option value="logica.html">Lógica</option>
-                            <option value="sms.html">SMS</option>
-                        </select>
-                        </li>
-                        <script src="menu.js"></script>
-                    <li><a href="index.html#direc-publi">Publicações</a></li>
-                    <!--Menu para ser direcionados para certa parte da página principal ou ir para uma nova página-->
-                    <li><a href="index.html#equipe">Equipe</a></li>
-                    <li><a href="index.html#direc-sobre-nos">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="menu-para-celular">
-            <i class="fa fa-bars" id="barra-menu" onclick="menu()"></i>
-            <div id="div-ul-menu-celular">
-                <ul id="ul-menu-celular" hidden>
-                    <li><a href="index.html#pagina-inicial">Página Inicial</a></li>
-                    <li><a href="#começo">Início</a></li>
-                    <li><a href="index.html#direc-publi">Publicações</a></li>
-                    <li><a href="index.html#equipe">Equipe</a></li>
-                    <li><a href="index.html#direc-sobre-nos">Sobre nós</a></li>
-                    <script src="main.js"></script>
-                </ul>
-            </div>
+  <body>
+    <header class="header-homepage">
+      <div class="menu-left">
+        <a href="http://www.etepam.pe.gov.br/"
+          ><img class="logo-etepam" src="../imgs/etepam-logo-aberta.png"
+        /></a>
+      </div>
+      <div class="menu-right">
+        <nav class="nav-header">
+          <i class="fa fa-solid fa-bars menu-bars"></i>
+          <ul>
+            <li><a href="/#inicio">Início</a></li>
+            <li><a href="/#posts">Publicações</a></li>
+            <li><a href="/#equipe">Equipe</a></li>
+            <li><a href="/#sobre-nos">Sobre nós</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    </header>
-    <section>
-        <div id="div-img-principal">
-            <!--Imagem Principal-->
-            <img id="img-principal" src="https://i.imgur.com/HLrgqvn.png">
-            <span id="direc-sobre-nos"></span>
-        </div>
-
-        <h2 class = 'títulos'>Rede Local - LAN</h2>
-        <img class= "imagens" src="https://i.imgur.com/iDvFTyZ.png" alt="">
-        <p class = 'parágrafo'>
-            As Redes Locais (Local Area Network, LAN) conectam computadores que estão em um mesmo espaço físico. Este é o formato mais conhecido e está presente em escolas, escritórios, e até na sua casa. Por meio dela, é possível compartilhar informações e recursos entre os dispositivos participantes.
-        </p>
-
-        <h2 class = 'títulos'>Rede Metropolitana - MAN</h2>
-        <img class= "imagens" src="https://i.imgur.com/1JA6UTU.png" alt="">
-        <p class = 'parágrafo'>
-            Este tipo de rede (Metropolitan Area Network, MAN)  conecta diversas redes locais que estejam a até algumas dezenas de quilômetros de distância. Em geral, é utilizada para interligar escritórios de uma mesma empresa que estejam em bairros ou até em municípios diferentes. 
-        </p>
-        
-        <h2 class = 'títulos'>Rede de Longa Distância - WAN</h2>
-        <img class= "imagens" src="https://i.imgur.com/auBkO7S.png" alt="">
-        <p class = 'parágrafo'>
-            Os utilizadores das Redes de Longa Distância (Wide Area Network, WAN) conseguem conectar equipamentos em locais ainda mais distantes que os da MAN. Sua cobertura permite interligar equipamentos que estejam em países ou continentes diferentes. 
-        </p>
-
-        <h2 class = 'títulos'>Rede de Área de Armazenamento - SAN</h2>
-        <img class= "imagens" src="https://i.imgur.com/R5eAA6y.png" alt="">
-        <p class = 'parágrafo'>
-            Este tipo de rede (em inglês Storage Area Network ou SAN) é utilizado, unicamente, para armazenar dados da rede e para fazer a comunicação entre um servidor e os demais dispositivos.        </p>
-
-        <h2 class = 'títulos'>Rede de Área Pessoal - PAN</h2>
-        <img class= "imagens" src="https://i.imgur.com/cJMbxjC.png" alt="">
-        <p class = 'parágrafo'>
-            A PAN  (Personal Area Network) é utilizada para que dispositivos se comuniquem dentro de uma distância bastante limitada. Ela conecta dispositivos a uma distância curtíssima. A ligação por Bluetooth é um bom exemplo.        </p>
-
-        <h2 class = 'títulos'>Rede Local Sem Fio - WLAN</h2>
-        <img class= "imagens" src="https://i.imgur.com/qbv8fFi.png" alt="">
-        <p class = 'parágrafo'>
-            A rede WLAN  (em inglês Wireless Local Area Network) pode ser uma opção à LAN. Para quem quer acabar com os cabos, ela se conecta por meio da internet e é bastante usada em residências e em lugares públicos.        
-        </p>
-
-        <h2 class = 'títulos'>Rede Metropolitana Sem Fio - WMAN</h2>
-        <img class= "imagens" src="https://i.imgur.com/f3Bs2gW.png" alt="">
-        <p class = 'parágrafo'>
-Esta é uma versão sem fio (Wireless)  da MAN (Metropolitan Area Network). Seu alcance também é de dezenas de quilômetros, o que torna possível conectar câmpus de universidades e redes de escritórios.        </p>
-
-        <h2 class = 'títulos' >Rede de Longa Distância Sem Fio - WWAN</h2>
-        <img class= "imagens" src="https://i.imgur.com/tmzfG8T.png" alt="">
-        <p class = 'parágrafo'>
-            Este tipo de rede sem fio é o mais sujeito a ruídos. A WWAN (em inglês: Wireless Wide Area Network) alcança diversas partes do mundo e é a tecnologia utilizada pelas operadoras de celulares para criar suas rede de transmissão.         </p>
+    <main>
+      <div class="div-main-img">
+        <img
+          id="sobre-nos"
+          class="main-img-homepage"
+          src="../imgs/foto-etepam-fundo-redes.png"
+        />
+      </div>
+      <main class="posts-logic-and-computer">
+        <section>
+          <h2 class="titles">Rede Local - LAN</h2>
+          <img class="images" src="/imgs/posts/redes/lan.png" />
+          <p class="texts">
+            As Redes Locais (Local Area Network, LAN) conectam computadores que
+            estão em um mesmo espaço físico. Este é o formato mais conhecido e
+            está presente em escolas, escritórios, e até na sua casa. Por meio
+            dela, é possível compartilhar informações e recursos entre os
+            dispositivos participantes.
+          </p>
         </section>
-        <footer>
-            <div id="footer">
-                <div id="footer-center">
-                    <a href="potfolio.html">
-                     Redes socias
-                    </a>
-                    <div id="icon"> 
-                    <i class="fa fa-instagram footer" id="icon-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-twitter footer" id="icon-twitter" ></i>
-                    </div>
-                </div>
-                <div id="copyright">
-                    <p>&copy;Copyright © Create Your PC. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
-
-</body>
+        <section>
+          <h2 class="titles">Rede Metropolitana - MAN</h2>
+          <img class="images" src="/imgs/posts/redes/man.png" />
+          <p class="texts">
+            Este tipo de rede (Metropolitan Area Network, MAN) conecta diversas
+            redes locais que estejam a até algumas dezenas de quilômetros de
+            distância. Em geral, é utilizada para interligar escritórios de uma
+            mesma empresa que estejam em bairros ou até em municípios
+            diferentes.
+          </p>
+        </section>
+        <section>
+          <h2 class="titles">Rede de Longa Distância - WAN</h2>
+          <img class="images" src="/imgs/posts/redes/wan.png" />
+          <p class="texts">
+            Os utilizadores das Redes de Longa Distância (Wide Area Network,
+            WAN) conseguem conectar equipamentos em locais ainda mais distantes
+            que os da MAN. Sua cobertura permite interligar equipamentos que
+            estejam em países ou continentes diferentes.
+          </p>
+        </section>
+        <section>
+          <h2 class="titles">Rede de Área de Armazenamento - SAN</h2>
+          <img class="images" src="/imgs/posts/redes/san.png" />
+          <p class="texts">
+            Este tipo de rede (em inglês Storage Area Network ou SAN) é
+            utilizado, unicamente, para armazenar dados da rede e para fazer a
+            comunicação entre um servidor e os demais dispositivos.
+          </p>
+        </section>
+        <section>
+          <h2 class="titles">Rede de Área Pessoal - PAN</h2>
+          <img class="images" src="/imgs/posts/redes/pan.png" />
+          <p class="texts">
+            A PAN (Personal Area Network) é utilizada para que dispositivos se
+            comuniquem dentro de uma distância bastante limitada. Ela conecta
+            dispositivos a uma distância curtíssima. A ligação por Bluetooth é
+            um bom exemplo.
+          </p>
+        </section>
+        <section>
+          <h2 class="titles">Rede Local Sem Fio - WLAN</h2>
+          <img class="images" src="/imgs/posts/redes/wlan.png" />
+          <p class="texts">
+            A rede WLAN (em inglês Wireless Local Area Network) pode ser uma
+            opção à LAN. Para quem quer acabar com os cabos, ela se conecta por
+            meio da internet e é bastante usada em residências e em lugares
+            públicos.
+          </p>
+        </section>
+        <section>
+          <h2 class="titles">Rede Metropolitana Sem Fio - WMAN</h2>
+          <img class="images" src="/imgs/posts/redes/wman.png" />
+          <p class="texts">
+            Esta é uma versão sem fio (Wireless) da MAN (Metropolitan Area
+            Network). Seu alcance também é de dezenas de quilômetros, o que
+            torna possível conectar câmpus de universidades e redes de
+            escritórios.
+          </p>
+        </section>
+        <section>
+          <h2 class="titles">Rede de Longa Distância Sem Fio - WWAN</h2>
+          <img class="images" src="/imgs/posts/redes/wwan.png" />
+          <p class="texts">
+            Este tipo de rede sem fio é o mais sujeito a ruídos. A WWAN (em
+            inglês: Wireless Wide Area Network) alcança diversas partes do mundo
+            e é a tecnologia utilizada pelas operadoras de celulares para criar
+            suas rede de transmissão.
+          </p>
+        </section>
+      </main>
+    </main>
+    <footer>
+      <div class="up-footer">
+        <a class="titles" href="potfolio.html"> Redes socias </a>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="down-footer">
+        <p>&copy;Copyright © Create Your PC. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
 </html>

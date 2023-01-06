@@ -1,353 +1,343 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style-computer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Lógica de Programação - Create Your PC</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-computer.css">
-    <link rel="stylesheet" href="style-logica.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title> Lógica de Programação - Create Your PC</title>
-</head>
-
-<body>
-    <span id="começo"></span>
-    <!--Para auxiliar na direção do menu-->
-    <header>
-        <!--Menu da esquerda cotendo a logo do ETEPAM-->
-        <div id="menu-left"> <a href="http://www.etepam.pe.gov.br/"><img id="logo-etepam" width="255" height="45"
-                    src="https://i.imgur.com/Rjdmhn1.png"></a></div>
-        <div id="menu-right">
-            <nav>
-                <ul id="lista-começo">
-                    <li><a href="index.html#começo">Início</a></li>
-                    <li id="select">
-                        <select name="unidade" id="unidade" onChange="AbrirSecao(this.value)">
-                            <option value="">Materias</option>
-                            <option value="computador.html">Computador</option>
-                            <option value="redes.html">Redes</option>
-                            <option value="logica.html">Lógica</option>
-                            <option value="sms.html">SMS</option>
-                        </select>
-                    </li>
-                    <script src="menu.js"></script>
-                    <li><a href="index.html#direc-publi">Publicações</a></li>
-                    <!--Menu para ser direcionados para certa parte da página principal ou ir para uma nova página-->
-                    <li><a href="index.html#equipe">Equipe</a></li>
-                    <li><a href="index.html#direc-sobre-nos">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="menu-para-celular">
-            <i class="fa fa-bars" id="barra-menu" onclick="menu()"></i>
-            <div id="div-ul-menu-celular">
-                <ul id="ul-menu-celular" hidden>
-                    <li><a href="index.html#pagina-inicial">Página Inicial</a></li>
-                    <li><a href="#começo">Início</a></li>
-                    <li><a href="index.html#direc-publi">Publicações</a></li>
-                    <li><a href="index.html#equipe">Equipe</a></li>
-                    <li><a href="index.html#direc-sobre-nos">Sobre nós</a></li>
-                    <script src="main.js"></script>
-                </ul>
-            </div>
+  <body>
+    <header class="header-homepage">
+      <div class="menu-left">
+        <a href="http://www.etepam.pe.gov.br/"
+          ><img class="logo-etepam" src="../imgs/etepam-logo-aberta.png"
+        /></a>
+      </div>
+      <div class="menu-right">
+        <nav class="nav-header">
+          <i class="fa fa-solid fa-bars menu-bars"></i>
+          <ul>
+            <li><a href="/#inicio">Início</a></li>
+            <li><a href="/#posts">Publicações</a></li>
+            <li><a href="/#equipe">Equipe</a></li>
+            <li><a href="/#sobre-nos">Sobre nós</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    </header>
-    <section>
-        <div id="div-img-principal">
-            <!--Imagem Principal-->
-            <img id="img-principal" src="https://i.imgur.com/Sw6UUyy.png">
-        </div>
-        <div class="container">
-            <div id="introdução">
-                <h2 class="titulos">Lógica de programação: o que é e por que é importante?</h2>
-                <p class="textos-computer">Tudo o que fazemos segue uma sequência lógica.</p>
-                <p class="textos-computer">Na grande maioria das vezes, não nos damos conta disso, mas ao fazer uma
-                    análise do nosso cotidiano, podemos compreender como todas as nossas ações são consequência de uma
-                    cadeia de outras ações menores que nos levaram até uma atitude final.</p>
-                <p class="textos-computer">Vamos tomar como exemplo o café que tomamos de manhã.</p>
-                <p class="textos-computer">Quando perguntam como tomamos nosso café, a maioria de nós responde que, ao
-                    acordarmos, preparamos o café com auxílio de uma cafeteira elétrica, colocamos ele em uma caneca e o
-                    tomamos.</p>
-                <p class="textos-computer">Mas, ao destrinchar este processo, somos capazes de estipular uma sequência
-                    de passos que nos levaram ao ato final de beber este café. Esta sequência pode ser:</p>
 
-                <ol class="textos-computer">
-                    <li>Ao acordar, levanto da cama;</li>
-                    <li>Ao acordar, levanto da cama;</li>
-                    <li>Após descer as escadas, entro na cozinha; </li>
-                    <li>Após entrar na cozinha, pego o pó de café no armário;</li>
-                    <li>Após pegar o pó de café, o coloco dentro da cafeteira; </li>
-                    <li>Após colocar o pó na cafeteira, jogo água no compartimento específico;</li>
-                    <li>Após inserir todos os ingredientes na máquina, aperto o botão de ligar;</li>
-                    <li>Quando o café está pronto, pego a garrafa;</li>
-                    <li>Após pegar a garrafa, despejo o café dentro de uma caneca;</li>
-                    <li>Após colocar o café na caneca, bebo o café.</li>
-                </ol>
-                <p class="textos-computer"> Se detalharmos ainda mais este processo, é possível incluir mais passos
-                    dentro desta sequência.
+    <main>
+      <div class="div-main-img">
+        <img
+          id="sobre-nos"
+          class="main-img-homepage"
+          src="../imgs/foto-etepam-fundo-logica.png"
+        />
+      </div>
+      <main class="posts-logic-and-computer">
+        <section class="introduction">
+          <h2 class="titles">
+            Lógica de programação: o que é e por que é importante?
+          </h2>
+          <p class="texts">
+            Tudo o que fazemos segue uma sequência lógica. Na grande maioria das
+            vezes, não nos damos conta disso, mas ao fazer uma análise do nosso
+            cotidiano, podemos compreender como todas as nossas ações são
+            consequência de uma cadeia de outras ações menores que nos levaram
+            até uma atitude final. Vamos tomar como exemplo o café que tomamos
+            de manhã. Quando perguntam como tomamos nosso café, a maioria de nós
+            responde que, ao acordarmos, preparamos o café com auxílio de uma
+            cafeteira elétrica, colocamos ele em uma caneca e o tomamos. Mas, ao
+            destrinchar este processo, somos capazes de estipular uma sequência
+            de passos que nos levaram ao ato final de beber este café. Esta
+            sequência pode ser:
+          </p>
+          <ol class="texts">
+            <li>Ao acordar, levanto da cama;</li>
+            <li>Ao acordar, levanto da cama;</li>
+            <li>Após descer as escadas, entro na cozinha;</li>
+            <li>Após entrar na cozinha, pego o pó de café no armário;</li>
+            <li>Após pegar o pó de café, o coloco dentro da cafeteira;</li>
+            <li>
+              Após colocar o pó na cafeteira, jogo água no compartimento
+              específico;
+            </li>
+            <li>
+              Após inserir todos os ingredientes na máquina, aperto o botão de
+              ligar;
+            </li>
+            <li>Quando o café está pronto, pego a garrafa;</li>
+            <li>Após pegar a garrafa, despejo o café dentro de uma caneca;</li>
+            <li>Após colocar o café na caneca, bebo o café.</li>
+          </ol>
+          <p class="texts">
+            Se detalharmos ainda mais este processo, é possível incluir mais
+            passos dentro desta sequência. Não estamos acostumados a pensar
+            desta maneira sobre nossas atividades cotidianas, mas, quando
+            falamos de programação, estipular uma sequência de etapas é um
+            procedimento muito importante e necessário, uma vez que, diferente
+            de nós, seres humanos, os computadores não são capazes de prever
+            nenhum comportame Quando queremos resolver um problema, desenvolver
+            um software, criar um jogo ou executar qualquer ação por meio de um
+            código, precisamos estipular quais passos o computador deverá seguir
+            para chegar ao nosso objetivo fin À maneira de pensar logicamente
+            para estipular sequências de passos para a resolução de um problema,
+            damos o nome de lógica de programação; à sequência narrativa desses
+            eventos, damos o nome de algorit
+          </p>
+        </section>
+        <section class="what's-it?">
+          <h2 class="titles">O que é lógica de programação?</h2>
+          <p class="texts">
+            Lógica de programação é a organização coesa de uma sequência de
+            instruções voltadas à resolução de um problema, ou à criação de um
+            software ou aplicação. A lógica de programação é o conhecimento
+            anterior a qualquer outro quando falamos em
+            <a href="https://kenzie.com.br/blog/estudar-desenvolvimento-web/">
+              desenvolvimento web</a
+            >
+            porque é a partir dele que os aprendizados posteriores, como por
+            exemplo o das linguagens de programação, fará sentido. Cada
+            linguagem tem suas próprias particularidades, como sua sintaxe, seus
+            tipos de dados e sua orientação, mas a lógica por trás de todas é a
+            mesma. Em outras palavras, dominar a lógica de programação é a porta
+            de entrada para tornar-se um programador completo, seja em
+            <a href="https://kenzie.com.br/blog/estudar-desenvolvimento-web/"
+              >front-end </a
+            >ou em
+            <a
+              class="links"
+              href="https://kenzie.com.br/blog/estudar-desenvolvimento-web/"
+              >back-end</a
+            >.
+          </p>
+        </section>
+        <section class="why-it's-important">
+          <h2 class="titles">Por que a lógica de programação é importante?</h2>
+          <p class="texts">
+            <cite
+              >Everybody in this country should learn how to program a computer
+              because it teaches you how to think.” - Jobs, Steve.</cite
+            >
+            <br /><br />
+            A frase acima foi dita por Steve Jobs e está cheia de sentido. É
+            muito comum que muitos estudantes de programação se perguntem por
+            que a lógica de programação é tão importante. A lógica de
+            programação é importante porque é ela quem nos dá as ferramentas
+            necessárias para executar o processo mais básico no desenvolvimento
+            de alguma aplicação: a criação de seu
+            <b>algoritmo</b>. Antes de criar um software do zero, ou de resolver
+            um problema de um já existente, é necessário descascá-lo até
+            chegarmos ao seu núcleo. Em outras palavras, precisamos
+            compreendê-lo completamente, desde suas funções a seus objetivos
+            finais — ou seja, pesquisar, rascunhar, dominá-lo na íntegra.
+            Abaixo, vou deixar alguns aspectos do nosso trabalho e da nossa vida
+            que se beneficiam profundamente da plena compreensão dos conceitos
+            de lógica da programação!
+          </p>
+        </section>
+        <section class="organization">
+          <h2 class="titles">Organização</h2>
+          <p class="texts">
+            Ao aprendermos a pensar logicamente, tendemos a uma maior
+            organização de alguns processos. Seja em nossos ambientes pessoais
+            ou dentro de nossa mente, a ordem é fator determinante para que
+            possamos render mais e ser mais produtivos ao realizar nossas
+            tarefas. Com lógica de programação, a sua maneira de pensar irá
+            mudar e, com isso, seus processos externos também serão
+            positivamente impactados.
+          </p>
+        </section>
+        <section class="problem-solving">
+          <h2 class="titles">Resolução de problemas</h2>
+          <p class="texts">
+            Nem só de criação vive um programador; a resolução de problemas
+            também é muito comum em sua jornada de trabal Sob essa perspectiva,
+            podemos dizer que a programação também pode ser entendida como o
+            processo de dividir um problema complexo em pequenas partes para,
+            então, resolvê-las gradualmente a partir de trechos de códi Sem
+            lógica da programação isso não seria possível, uma vez que o
+            desenvolvimento de um algoritmo de resolução de problemas depende
+            diretamente dela.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Concentração</h2>
+          <p class="texts">
+            Como eu disse há pouco, quando nossa maneira de pensar muda, mudam
+            também as formas com que executamos nossos processos externos.
 
-                    Não estamos acostumados a pensar desta maneira sobre nossas atividades cotidianas, mas, quando
-                    falamos de programação, estipular uma sequência de etapas é um procedimento muito importante e
-                    necessário, uma vez que, diferente de nós, seres humanos, os computadores não são capazes de prever
-                    nenhum comportamento.<br> <br>
+            <b
+              >Se você tem problemas em atingir um bom nível de concentração na
+              hora de trabalhar ou estudar, compreender lógica de programação
+              pode te ajudar.</b
+            >
 
-                    Quando queremos resolver um problema, desenvolver um software, criar um jogo ou executar qualquer
-                    ação por meio de um código, precisamos estipular quais passos o computador deverá seguir para chegar
-                    ao nosso objetivo final. <br> <br>
+            Isso acontece porque, quanto mais claras as ações que precisamos
+            desempenhar para atingir determinados objetivos, podemos ordená-las
+            e executá-las, uma a uma, de maneira mais categórica e, por
+            consequência, com mais concentração.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Entender a tecnologia</h2>
+          <p class="texts">
+            á dissemos hoje que os computadores são incapazes de compreender
+            ordens subjetivas e que não estejam estritamente ordenadas de acordo
+            com a sua maneira de compreender, não é mes A partir disso, podemos
+            concluir que, ao estudar lógica de programação, estamos estudando
+            também a maneira como a tecnologia funciona de modo geral. Isso
+            porque todos os processos existentes em TI dependem de um código que
+            os susten Consequentemente, entender lógica da programação é um
+            caminho muito eficaz para compreender a tecnologia como um todo.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">
+            O papel dos algoritmos na lógica de programação
+          </h2>
+          <p class="texts">
+            Para quem é leigo, a palavra algoritmo chega a assustar. Muitas
+            vezes temos a ideia de que um algoritmo é um sistema super complexo
+            e de difícil compreens Esta é somente uma meia verdade. Algoritmos
+            podem ser sistemas mais robustos — e um bom exemplo disso é o
+            algoritmo do Google, extremamente poderoso e preciso ao entregar os
+            resultados de busca a um usuár Mas nem todo algoritmo está neste
+            nível de importância. Em programação, algoritmos são um conjunto de
+            instruções que um software ou aplicação deve seguir para executar
+            uma tarefa, resolver um problema ou chegar a um objetivo distinto.
+            Pense em um algoritmo como uma receita de bolo, por exemplo.
+            <b>
+              Uma receita de bolo que nada mais é do que uma sequência lógica de
+              etapas que, quando realizadas da maneira correta, resultam em uma
+              deliciosa sobremesa.
+            </b>
 
-                    À maneira de pensar logicamente para estipular sequências de passos para a resolução de um problema,
-                    damos o nome de lógica de programação; à sequência narrativa desses eventos, damos o nome de
-                    algoritmo. <br> <br>
-                </p>
-                <div id="o-que-é">
-                    <h2 class="titulos">O que é lógica de programação?</h2>
-                    <p class="textos-computer">Lógica de programação é a organização coesa de uma sequência de
-                        instruções voltadas à resolução de um problema, ou à criação de um software ou aplicação. <br>
-                        <br>
+            Do mesmo modo, um algoritmo, quando executado através de um código
+            que o permite funcionar com excelência, resulta na resolução de um
+            problema.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Como entender a lógica de programação?</h2>
+          <p class="texts">
+            A maneira mais eficiente de compreender a lógica de programação é
+            com a sua aplicação, ou seja: programan A teoria deve ser estudada
+            profundamente, mas a aplicação dará a um programador uma dimensão
+            mais ampla e mais completa sobre a utilidade destes conceit Com esta
+            percepção mais aguçada, um programador torna-se mais apto a
+            encontrar soluções mais inteligentes e simples de maneira mais rápi
+            Entender lógica de programação faz parte do processo de entender
+            programação como um todo e, para isso, é preciso conhecer todos os
+            aspectos deste proces Citarei alguns abaixo.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Variáveis e constantes</h2>
+          <p class="texts">
+            Constantes e variáveis são espaços de memória reservados em uma
+            máquina para a manutenção de determinados dad Estes dados serão
+            armazenados na memória de um software enquanto ele for executado. Na
+            maioria dos casos, após o seu encerramento, estes dados deixarão de
+            exist Os dados constantes, são fixos; os variáveis, vari Por
+            exemplo: ao desenvolver um pequeno código para executar uma soma,
+            podemos trabalhar com três variáve As chamarei de X, Y e Z (o
+            resulta As variáveis e constantes podem ser representadas por alguns
+            tipos de dados. Vou colocar alguns abaixo.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Tipos de dados</h2>
+          <p class="texts">
+            Os tipos de dados são os formatos em que as constantes ou variáveis
+            se apresent Veja abaixo os quatro tipos mais comuns de dados
+            utilizados em programação.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Texto</h2>
+          <p class="texts">
+            Este dado se refere aos dados que se apresentam através de uma
+            sequência de caracteres de texto que possuem apenas letras. Não é
+            possível representar um dado de texto com números ou caracteres
+            especiais, como símbolos
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Inteiro</h2>
+          <p class="texts">
+            O dado inteiro é a primeira classificação de dados numéricos. Este
+            dado serve aos números inteiros, ou seja, sem divisões. Podem ser
+            positivos ou negativos, como por exemplo 25; 40; 78; -5 e etc.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Real</h2>
+          <p class="texts">
+            O dado real é a segunda classificação de dados numéricos. Este dado
+            serve aos números quebrados, ou seja, que possuem casas decima
+            Também pode ser positivos ou negativos, como por exemplo 3,14; 2,5;
+            -8,9 e etc.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Lógico</h2>
+          <p class="texts">
+            Este tipo de dado define constantes ou variáveis booleanas que
+            exprimem condições; por exemplo, VERDADEIRO ou FALSO.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Estrutura de seleção e repetição</h2>
+          <p class="texts">
+            Uma estrutura de seleção e repetição é uma estrutura que permite que
+            um trecho de código seja executado mais de uma vez. Estas estruturas
+            também exprimem condiçõ Os tipos de dados das estruturas de seleção
+            costumam ser representados por se ou ca Para as estruturas de
+            repetição, os dados costumam ser representados por enquanto, para e
+            faça-enquanto.
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Qual a maneira mais fácil de aprender?</h2>
+          <p class="texts">
+            Não existe caminho fácil para nenhum tipo de aprendizado, mas na
+            hora de estudar lógica de programação, investir em uma escola de
+            programação que oferece o suporte de um time de ensino especializado
+            pode otimizar e agilizar a sua curva de aprendizagem!
+          </p>
+        </section>
+        <section class="">
+          <h2 class="titles">Conclusão</h2>
+          <p class="texts">
+            Se você está buscando maneiras de tornar-se um desenvolvedor, não
+            tente inventar a roda: comece pelo início e, ao dominar os conceitos
+            de lógica de programação, você estará totalmente apto a voltar seus
+            estudos para as primeiras linguagens de programação.
+          </p>
+        </section>
+      </main>
+    </main>
 
-                        A lógica de programação é o conhecimento anterior a qualquer outro quando falamos em
-                        <a class="links" href="https://kenzie.com.br/blog/estudar-desenvolvimento-web/">
-                            desenvolvimento web</a> porque é a partir dele que os aprendizados posteriores, como por
-                        exemplo o
-                        das linguagens de programação, fará sentido. <br> <br>
-
-                        Cada linguagem tem suas próprias particularidades, como sua sintaxe, seus tipos de dados e sua
-                        orientação, mas a lógica por trás de todas é a mesma.
-                        Em outras palavras, dominar a lógica de programação é a porta de entrada para tornar-se um
-                        programador completo, seja em <a class="links"
-                            href="https://kenzie.com.br/blog/estudar-desenvolvimento-web/">front-end </a>ou em <a
-                            class="links" href="https://kenzie.com.br/blog/estudar-desenvolvimento-web/">back-end</a>.
-                        <br><br>
-                    </p>
-                </div>
-                <div id="por-que-importante">
-                    <h2 class="titulos">Por que a lógica de programação é importante?</h2>
-                    <p class="textos-computer"><i>Everybody in this country should learn how to program a computer
-                            because it teaches you how to think.” – (Todo mundo neste país deveria aprender a programar
-                            porque isso te ensina a pensar)</i> A frase acima foi dita por Steve Jobs e está cheia de
-                        sentido. <br> <br>
-
-                        É muito comum que muitos estudantes de programação se perguntem por que a lógica de programação
-                        é tão importante. <br> <br>
-
-                        A lógica de programação é importante porque é ela quem nos dá as ferramentas necessárias para
-                        executar o processo mais básico no desenvolvimento de alguma aplicação: a criação de seu
-                        <b>algoritmo</b>. <br> <br>
-
-                        Antes de criar um software do zero, ou de resolver um problema de um já existente, é necessário
-                        descascá-lo até chegarmos ao seu núcleo. <br> <br>
-
-                        Em outras palavras, precisamos compreendê-lo completamente, desde suas funções a seus objetivos
-                        finais — ou seja, pesquisar, rascunhar, dominá-lo na íntegra. <br> <br>
-
-                        Abaixo, vou deixar alguns aspectos do nosso trabalho e da nossa vida que se beneficiam
-                        profundamente da plena compreensão dos conceitos de lógica da programação!
-                    </p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Organização</h2>
-                    <p class="textos-computer">Ao aprendermos a pensar logicamente, tendemos a uma maior organização de
-                        alguns processos. <br><br>
-
-                        Seja em nossos ambientes pessoais ou dentro de nossa mente, a ordem é fator determinante para
-                        que possamos render mais e ser mais produtivos ao realizar nossas tarefas. <br><br>
-
-                        Com lógica de programação, a sua maneira de pensar irá mudar e, com isso, seus processos
-                        externos também serão positivamente impactados.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Raciocínio lógico</h2>
-                    <p class="textos-computer">O raciocínio lógico de um programador é uma de suas maiores ferramentas
-                        de trabalho. <br><br>
-
-                        Uma máquina é incapaz de compreender ordens não-lógicas, do mesmo modo que são incapazes de
-                        raciocinar sobre regras dispostas de maneira desordenada.
-
-                        E é para isso que a lógica de programação existe: ao aguçar o raciocínio lógico do programador,
-                        ele está mais próximo da maneira de pensar de um computador e, portanto, mais habilidoso na hora
-                        de desenvolver um código eficiente.
-
-                        Quanto mais capazes de compreender as coisas ao nosso redor de maneira técnica nós formos, mais
-                        eficiente será nosso raciocínio lógico.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Resolução de problemas</h2>
-                    <p class="textos-computer">Nem só de criação vive um programador; a resolução de problemas também é
-                        muito comum em sua jornada de trabalho. <br><br>
-
-                        Sob essa perspectiva, podemos dizer que a programação também pode ser entendida como o processo
-                        de dividir um problema complexo em pequenas partes para, então, resolvê-las gradualmente a
-                        partir de trechos de código. <br><br>
-
-                        Sem lógica da programação isso não seria possível, uma vez que o desenvolvimento de um algoritmo
-                        de resolução de problemas depende diretamente dela.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Concentração</h2>
-                    <p class="textos-computer">Como eu disse há pouco, quando nossa maneira de pensar muda, mudam também
-                        as formas com que executamos nossos processos externos. <br><br>
-
-                        <b>Se você tem problemas em atingir um bom nível de concentração na hora de trabalhar ou
-                            estudar,
-                            compreender lógica de programação pode te ajudar.</b> <br><br>
-
-                        Isso acontece porque, quanto mais claras as ações que precisamos desempenhar para atingir
-                        determinados objetivos, podemos ordená-las e executá-las, uma a uma, de maneira mais categórica
-                        e, por consequência, com mais concentração.
-                    </p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Entender a tecnologia</h2>
-                    <p class="textos-computer">á dissemos hoje que os computadores são incapazes de compreender ordens
-                        subjetivas e que não estejam estritamente ordenadas de acordo com a sua maneira de compreender,
-                        não é mesmo? <br><br>
-
-                        A partir disso, podemos concluir que, ao estudar lógica de programação, estamos estudando também
-                        a maneira como a tecnologia funciona de modo geral. Isso porque todos os processos existentes em
-                        TI dependem de um código que os sustenta. <br><br>
-
-                        Consequentemente, entender lógica da programação é um caminho muito eficaz para compreender a
-                        tecnologia como um todo.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">O papel dos algoritmos na lógica de programação</h2>
-                    <p class="textos-computer">Para quem é leigo, a palavra algoritmo chega a assustar. Muitas vezes
-                        temos a ideia de que um algoritmo é um sistema super complexo e de difícil compreensão. <br><br>
-
-                        Esta é somente uma meia verdade. Algoritmos podem ser sistemas mais robustos — e um bom exemplo
-                        disso é o algoritmo do Google, extremamente poderoso e preciso ao entregar os resultados de
-                        busca a um usuário. <br><br>
-
-                        Mas nem todo algoritmo está neste nível de importância. <br><br>
-
-                        Em programação, algoritmos são um conjunto de instruções que um software ou aplicação deve
-                        seguir para executar uma tarefa, resolver um problema ou chegar a um objetivo distinto. <br><br>
-
-                        Pense em um algoritmo como uma receita de bolo, por exemplo. <b> Uma receita de bolo que nada
-                            mais é
-                            do que uma sequência lógica de etapas que, quando realizadas da maneira correta, resultam em
-                            uma
-                            deliciosa sobremesa. </b> <br><br>
-
-                        Do mesmo modo, um algoritmo, quando executado através de um código que o permite funcionar com
-                        excelência, resulta na resolução de um problema.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Como entender a lógica de programação?</h2>
-                    <p class="textos-computer">A maneira mais eficiente de compreender a lógica de programação é com a
-                        sua aplicação, ou seja: programando. <br><br>
-
-                        A teoria deve ser estudada profundamente, mas a aplicação dará a um programador uma dimensão
-                        mais ampla e mais completa sobre a utilidade destes conceitos. <br><br>
-
-                        Com esta percepção mais aguçada, um programador torna-se mais apto a encontrar soluções mais
-                        inteligentes e simples de maneira mais rápida. <br><br>
-
-                        Entender lógica de programação faz parte do processo de entender programação como um todo e,
-                        para isso, é preciso conhecer todos os aspectos deste processo. <br><br>
-
-                        Citarei alguns abaixo.
-
-                    </p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Variáveis e constantes</h2>
-                    <p class="textos-computer">Constantes e variáveis são espaços de memória reservados em uma máquina
-                        para a manutenção de determinados dados. <br><br>
-
-                        Estes dados serão armazenados na memória de um software enquanto ele for executado. Na maioria
-                        dos casos, após o seu encerramento, estes dados deixarão de existir. <br><br>
-
-                        Os dados constantes, são fixos; os variáveis, variam. <br><br>
-
-                        Por exemplo: ao desenvolver um pequeno código para executar uma soma, podemos trabalhar com três
-                        variáveis. <br><br>
-
-                        As chamarei de X, Y e Z (o resultado) <br><br>
-
-                        As variáveis e constantes podem ser representadas por alguns tipos de dados. Vou colocar alguns
-                        abaixo.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Tipos de dados</h2>
-                    <p class="textos-computer">Os tipos de dados são os formatos em que as constantes ou variáveis se
-                        apresentam. <br><br>
-
-                        Veja abaixo os quatro tipos mais comuns de dados utilizados em programação.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Texto</h2>
-                    <p class="textos-computer">Este dado se refere aos dados que se apresentam através de uma sequência
-                        de caracteres de texto que possuem apenas letras. <br><br>
-
-                        Não é possível representar um dado de texto com números ou caracteres especiais, como símbolos
-                    </p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Inteiro</h2>
-                    <p class="textos-computer">O dado inteiro é a primeira classificação de dados numéricos. Este dado
-                        serve aos números inteiros, ou seja, sem divisões. <br><br>
-
-                        Podem ser positivos ou negativos, como por exemplo 25; 40; 78; -5 e etc.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Real</h2>
-                    <p class="textos-computer">O dado real é a segunda classificação de dados numéricos. Este dado serve
-                        aos números quebrados, ou seja, que possuem casas decimais. <br><br>
-
-                        Também pode ser positivos ou negativos, como por exemplo 3,14; 2,5; -8,9 e etc.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Lógico</h2>
-                    <p class="textos-computer">Este tipo de dado define constantes ou variáveis booleanas que exprimem
-                        condições; por exemplo, VERDADEIRO ou FALSO.</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Estrutura de seleção e repetição</h2>
-                    <p class="textos-computer">Uma estrutura de seleção e repetição é uma estrutura que permite que um
-                        trecho de código seja executado mais de uma vez. Estas estruturas também exprimem condições.
-                        <br><br>
-
-                        Os tipos de dados das estruturas de seleção costumam ser representados por se ou caso. <br><br>
-
-                        Para as estruturas de repetição, os dados costumam ser representados por enquanto, para e
-                        faça-enquanto.
-                    </p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Qual a maneira mais fácil de aprender?</h2>
-                    <p class="textos-computer">Não existe caminho fácil para nenhum tipo de aprendizado, mas na hora de
-                        estudar lógica de programação, investir em uma escola de programação que oferece o suporte de um
-                        time de ensino especializado pode otimizar e agilizar a sua curva de aprendizagem!</p>
-                </div>
-                <div id="">
-                    <h2 class="titulos">Conclusão</h2>
-                    <p class="textos-computer">Se você está buscando maneiras de tornar-se um desenvolvedor, não tente
-                        inventar a roda: comece pelo início e, ao dominar os conceitos de lógica de programação, você
-                        estará totalmente apto a voltar seus estudos para as primeiras linguagens de programação.</p>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
-        <div id="footer">
-            <div id="footer-center">
-                <a href="potfolio.html">
-                    Redes socias
-                </a>
-                <div id="icon">
-                    <i class="fa fa-instagram footer" id="icon-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-twitter footer" id="icon-twitter"></i>
-                </div>
-            </div>
-            <div id="copyright">
-                <p>&copy;Copyright © Create Your PC. All rights reserved.</p>
-            </div>
+      <div class="up-footer">
+        <a class="titles" href="potfolio.html"> Redes socias </a>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
+      </div>
+      <div class="down-footer">
+        <p>&copy;Copyright © Create Your PC. All rights reserved.</p>
+      </div>
     </footer>
-</body>
-
+    <script src="../js/main.js"></script>
+  </body>
 </html>

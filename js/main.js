@@ -10,9 +10,20 @@ menuBars.addEventListener("click", activeMenu);
 
 setInterval(() => {
   if (window.innerWidth < 600) {
-    etepamsCar.src = "imgs/etepam-logo-fechada.png";
+    etepamsCar.src = "/imgs/etepam-logo-fechada.png";
   } else {
-    etepamsCar.src = "imgs/etepam-logo-aberta.png";
+    etepamsCar.src = "/imgs/etepam-logo-aberta.png";
   }
-  // if(screen.width > )
 }, 100);
+
+const start = document.querySelector("#inicio");
+
+function goTheStart(e) {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
+
+start.addEventListener("click", goTheStart);

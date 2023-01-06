@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
 }
 .header-homepage,
 .nav-header ul,
@@ -252,7 +254,7 @@ footer .down-footer {
   .active {
     right: 0!important;
   }
-}
+} 
 @media (max-width: 600px) {
   .logo-etepam {
     width: 2.5rem;
