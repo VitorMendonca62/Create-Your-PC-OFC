@@ -272,8 +272,23 @@ footer .down-footer {
     font-size: 1.3rem;
   }
 }
-
-
+@media (max-width: 300px) {
+  .nav-header ul li a {
+    font-size: .8rem;
+  }
+  .menu-bars {
+    font-size: 1rem!important;
+  }
+  .texts {
+    font-size: .8rem;
+  }
+}
+@media (max-width: 250px) {
+  .introduction main {
+    height: 20rem;
+    margin: 13rem 0;
+  }
+}
 @media (min-width: 3840px) {
   .posts a {
     width: 15.8%;

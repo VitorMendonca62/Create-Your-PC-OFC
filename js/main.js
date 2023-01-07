@@ -7,13 +7,13 @@ function activeMenu(e) {
 }
 
 menuBars.addEventListener("click", activeMenu);
+console.log(location);
 
 setInterval(() => {
-  if (window.innerWidth < 600) {
-    etepamsCar.src = "/imgs/etepam-logo-fechada.png";
-  } else {
-    etepamsCar.src = "/imgs/etepam-logo-aberta.png";
-  }
+  const pontos = location.pathname.includes("pages") ? "../" : "";
+  etepamsCar.src = `${pontos}imgs/etepam-logo-${
+    window.innerWidth < 600 ? "fechada" : "aberta"
+  }.png`;
 }, 100);
 
 const start = document.querySelector("#inicio");
